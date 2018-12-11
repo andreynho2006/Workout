@@ -15,6 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onShowDetails(View view) {
         Intent intent = new Intent(this, DetailActivity.class);
-        startActionMode(intent);
+        startActivity(intent);
     }
 }
