@@ -13,6 +13,7 @@ import android.view.ViewGroup;
  */
 public class WorkoutDetailFragment extends Fragment {
 
+    private long workoutId;
 
     public WorkoutDetailFragment() {
         // Required empty public constructor
@@ -24,6 +25,10 @@ public class WorkoutDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_workout_detail, container, false);
+    }
+
+    public void setWorkout(long id) {
+        this.workoutId = id;
     }
 
 }
